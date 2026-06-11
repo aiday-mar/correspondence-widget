@@ -6,7 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8C77ED2A2FDAB300000DC23A /* Transit Departure Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8C77ED202FDAB300000DC23A /* Transit Departure Widget.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		8C77ED2C2FDAB300000DC23A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C77ECE52FDAB059000DC23A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C77ED262FDAB300000DC23A;
+			remoteInfo = "Transit Departure Widget";
+		};
 		8C77ECFB2FDAB05B000DC23A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8C77ECE52FDAB059000DC23A /* Project object */;
@@ -27,9 +38,20 @@
 		8C77ECED2FDAB059000DC23A /* maps widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "maps widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C77ECFA2FDAB05B000DC23A /* maps widgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "maps widgetTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C77ED042FDAB05B000DC23A /* maps widgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "maps widgetUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C77ED202FDAB300000DC23A /* Transit Departure Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Transit Departure Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		8C77ED212FDAB300000DC23A /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8C77ED222FDAB300000DC23A /* Transit Departure Widget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Transit Departure Widget";
+			sourceTree = "<group>";
+		};
 		8C77ECEF2FDAB059000DC23A /* maps widget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "maps widget";
@@ -76,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				8C77ECEF2FDAB059000DC23A /* maps widget */,
+				8C77ED212FDAB300000DC23A /* Shared */,
+				8C77ED222FDAB300000DC23A /* Transit Departure Widget */,
 				8C77ECFD2FDAB05B000DC23A /* maps widgetTests */,
 				8C77ED072FDAB05B000DC23A /* maps widgetUITests */,
 				8C77ECEE2FDAB059000DC23A /* Products */,
@@ -86,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				8C77ECED2FDAB059000DC23A /* maps widget.app */,
+				8C77ED202FDAB300000DC23A /* Transit Departure Widget.appex */,
 				8C77ECFA2FDAB05B000DC23A /* maps widgetTests.xctest */,
 				8C77ED042FDAB05B000DC23A /* maps widgetUITests.xctest */,
 			);
@@ -102,13 +127,16 @@
 				8C77ECE92FDAB059000DC23A /* Sources */,
 				8C77ECEA2FDAB059000DC23A /* Frameworks */,
 				8C77ECEB2FDAB059000DC23A /* Resources */,
+				8C77ED2B2FDAB300000DC23A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8C77ED2D2FDAB300000DC23A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				8C77ECEF2FDAB059000DC23A /* maps widget */,
+				8C77ED212FDAB300000DC23A /* Shared */,
 			);
 			name = "maps widget";
 			packageProductDependencies = (
@@ -116,6 +144,29 @@
 			productName = "maps widget";
 			productReference = 8C77ECED2FDAB059000DC23A /* maps widget.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8C77ED262FDAB300000DC23A /* Transit Departure Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C77ED292FDAB300000DC23A /* Build configuration list for PBXNativeTarget "Transit Departure Widget" */;
+			buildPhases = (
+				8C77ED232FDAB300000DC23A /* Sources */,
+				8C77ED242FDAB300000DC23A /* Frameworks */,
+				8C77ED252FDAB300000DC23A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8C77ED212FDAB300000DC23A /* Shared */,
+				8C77ED222FDAB300000DC23A /* Transit Departure Widget */,
+			);
+			name = "Transit Departure Widget";
+			packageProductDependencies = (
+			);
+			productName = "Transit Departure Widget";
+			productReference = 8C77ED202FDAB300000DC23A /* Transit Departure Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		8C77ECF92FDAB05B000DC23A /* maps widgetTests */ = {
 			isa = PBXNativeTarget;
@@ -176,6 +227,9 @@
 					8C77ECEC2FDAB059000DC23A = {
 						CreatedOnToolsVersion = 26.5;
 					};
+					8C77ED262FDAB300000DC23A = {
+						CreatedOnToolsVersion = 26.5;
+					};
 					8C77ECF92FDAB05B000DC23A = {
 						CreatedOnToolsVersion = 26.5;
 						TestTargetID = 8C77ECEC2FDAB059000DC23A;
@@ -201,6 +255,7 @@
 			projectRoot = "";
 			targets = (
 				8C77ECEC2FDAB059000DC23A /* maps widget */,
+				8C77ED262FDAB300000DC23A /* Transit Departure Widget */,
 				8C77ECF92FDAB05B000DC23A /* maps widgetTests */,
 				8C77ED032FDAB05B000DC23A /* maps widgetUITests */,
 			);
@@ -229,7 +284,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C77ED252FDAB300000DC23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C77ED2B2FDAB300000DC23A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8C77ED2A2FDAB300000DC23A /* Transit Departure Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8C77ECE92FDAB059000DC23A /* Sources */ = {
@@ -253,9 +329,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C77ED232FDAB300000DC23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8C77ED2D2FDAB300000DC23A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C77ED262FDAB300000DC23A /* Transit Departure Widget */;
+			targetProxy = 8C77ED2C2FDAB300000DC23A /* PBXContainerItemProxy */;
+		};
 		8C77ECFC2FDAB05B000DC23A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8C77ECEC2FDAB059000DC23A /* maps widget */;
@@ -392,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "maps widget/maps_widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -399,6 +488,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_GoogleMapsAPIKey = "$(GOOGLE_MAPS_API_KEY)";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "maps widget/maps_widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -429,6 +520,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_GoogleMapsAPIKey = "$(GOOGLE_MAPS_API_KEY)";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -523,6 +615,62 @@
 			};
 			name = Release;
 		};
+		8C77ED272FDAB300000DC23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Transit Departure Widget/TransitDepartureWidget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Transit Departure Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS.maps-widget.TransitDepartureWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8C77ED282FDAB300000DC23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Transit Departure Widget/TransitDepartureWidget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Transit Departure Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS.maps-widget.TransitDepartureWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -540,6 +688,15 @@
 			buildConfigurations = (
 				8C77ED0F2FDAB05B000DC23A /* Debug */,
 				8C77ED102FDAB05B000DC23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C77ED292FDAB300000DC23A /* Build configuration list for PBXNativeTarget "Transit Departure Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C77ED272FDAB300000DC23A /* Debug */,
+				8C77ED282FDAB300000DC23A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
